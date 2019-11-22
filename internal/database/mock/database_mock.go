@@ -1,7 +1,7 @@
 package mock
 
 import (
-	bw "github.com/VictorNine/bitwarden-go/internal/common"
+	bw "github.com/kisom/bitwarden-go/internal/common"
 	_ "github.com/mattn/go-sqlite3"
 )
 

@@ -9,7 +9,7 @@ import (
 	"strconv"
 	"time"
 
-	bw "github.com/VictorNine/bitwarden-go/internal/common"
+	bw "github.com/kisom/bitwarden-go/internal/common"
 	_ "github.com/mattn/go-sqlite3"
 	uuid "github.com/satori/go.uuid"
 )
@@ -321,11 +321,7 @@ func (db *DB) AddFolder(name string, owner string) (bw.Folder, error) {
 		return bw.Folder{}, err
 	}
 
-	newFolderID, err := uuid.NewV4()
-	if err != nil {
-		return bw.Folder{}, err
-	}
-
+	newFolderID := uuid.NewV4()
 	folder := bw.Folder{
 		Id:           newFolderID.String(),
 		Name:         name,

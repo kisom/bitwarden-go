@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-package="github.com/VictorNine/bitwarden-go/cmd/bitwarden-go"
+package="github.com/kisom/bitwarden-go/cmd/bitwarden-go"
 package_split=(${package//\// })
 package_name=${package_split[-1]}
 

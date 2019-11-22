@@ -5,10 +5,10 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/VictorNine/bitwarden-go/internal/api"
-	"github.com/VictorNine/bitwarden-go/internal/auth"
-	"github.com/VictorNine/bitwarden-go/internal/common"
-	"github.com/VictorNine/bitwarden-go/internal/database/sqlite"
+	"github.com/kisom/bitwarden-go/internal/api"
+	"github.com/kisom/bitwarden-go/internal/auth"
+	"github.com/kisom/bitwarden-go/internal/common"
+	"github.com/kisom/bitwarden-go/internal/database/sqlite"
 )
 
 var cfg struct {
